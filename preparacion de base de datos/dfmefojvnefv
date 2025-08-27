@@ -1,6 +1,0 @@
-
-import tinytag as tt
-lnk="S:\Musica\Musica\salvar.flac\Alan Walker - Force [NCS Release] [downloaded with 1stBrowser].flac"
-aud = tt.TinyTag.get(lnk)
-
-print(aud)

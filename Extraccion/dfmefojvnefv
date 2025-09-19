@@ -1,0 +1,7 @@
+import methods as mt
+
+nn=input("inserte numero ")
+nn=int(nn)
+mt.traductor(nn)
+#print(k)2
+

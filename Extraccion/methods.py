@@ -7,13 +7,23 @@ def creacion(nombre):
     archivo.save(nombre)
     archivoo=ox.load_workbook(nombre)
     Libro=archivoo['Sheet']
+    
     Libro['B1']="Titulo"
     Libro['C1']="Artista"
     Libro['D1']="Album"
     Libro['E1']="Numero De Pista"
     Libro['F1']="Genero"
     Libro['G1']="Año"
-    Libro['A1']=2
+
+    Libro['A1']="Cantidad De Canciones"
+    Libro['A2']=2
+
+    Libro['O2']="Ultimo Extraido"
+    Libro['P2']=2
+    
+    Libro['O3']="Ultimo Guardado"
+    Libro['P3']=2
+    
     archivoo.save(nombre)
     print("Archivo ",nombre," creado UWU")
 

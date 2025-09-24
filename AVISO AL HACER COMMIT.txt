@@ -1,0 +1,1 @@
+se renombraron las carpetas, recuerde hacer ese cambio o se crearan carpetas zombie

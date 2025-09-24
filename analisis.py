@@ -1,29 +1,21 @@
-import pandas as pd
+import re
 
-# === CONFIGURACIÓN ===
-file_path = "Canciones UWU.xlsx"  # si el script está junto al Excel
+# Ruta del log
+log_path = "salida_completa.log"
 
-# Leer hoja
-df = pd.read_excel(file_path, sheet_name="Sheet")
-titulos = df["Titulo"].dropna().astype(str)
+# Expresión regular para capturar las peticiones GET a api.spotify.com
+pattern = re.compile(r'GET (.*?) HTTP/1\.1" (\d+)')
 
-# Contar guiones con espacios alrededor (ej: "Artista - Canción")
-guion_con_espacios = titulos.str.contains(r"\s-\s", regex=True).sum()
+peticiones = []
 
-# Contar guiones pegados entre letras/palabras (ej: "back-in-black")
-guion_sin_espacios = titulos.str.contains(r"\w-\w", regex=True).sum()
+with open(log_path, "r", encoding="utf-8") as f:
+    for line in f:
+        if "api.spotify.com" in line and "GET" in line:
+            match = pattern.search(line)
+            if match:
+                url, status = match.groups()
+                peticiones.append((url, status))
 
-# Total de títulos con algún guion
-total_con_guion = titulos.str.contains(r"-", regex=True).sum()
-
-print("📊 Resultados del análisis de guiones en títulos:")
-print(f"- Guiones con espacios (' - '): {guion_con_espacios}")
-print(f"- Guiones pegados ('palabra-palabra'): {guion_sin_espacios}")
-print(f"- Total de títulos que contienen guiones: {total_con_guion}")
-
-# === Mostrar ejemplos de los guiones pegados ===
-titulos_guion_pegado = titulos[titulos.str.contains(r"\w-\w", regex=True)]
-
-print("\n📋 Títulos con guiones pegados (ejemplo de sustitución de espacios):\n")
-for t in titulos_guion_pegado:
-    print(t)
+print(f"Total peticiones: {len(peticiones)}")
+for i, (url, status) in enumerate(peticiones, 1):
+    print(f"{i:03d} | Status {status} | {url}")

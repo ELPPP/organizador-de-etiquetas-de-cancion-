@@ -1,6 +1,6 @@
 import os
-import methods as cr
-#from Extraccion import methods as cr
+#import methods as cr
+from Extraccion import methods as cr
 import openpyxl as op
 import tinytag as tt
 #comprobacion de existencia y creacion del archivo
@@ -15,6 +15,11 @@ def iniciador(ruta):
 
     #inicio del proceso
     h=os.walk(ruta)
+    Archivo=op.load_workbook("DB.xlsx")
+    Libro=Archivo['Sheet'] 
+    P=Libro['A2']
+    p=P.value
+    
     for f in h:
         F=f[2]
         for C in F:
@@ -59,19 +64,14 @@ def iniciador(ruta):
                 print("error al leer metadatos....   ->)",TypeError)
 
             #añadir diccionario a excel
-            Archivo=op.load_workbook("DB.xlsx")
-            Libro=Archivo['Sheet'] 
-            P=Libro['A1']
-            p=P.value
+            
             print("variabilizando datos")
-            p = str(p)
-            e1 = "B" + p
-            e2 = "C" + p
-            e3 = "D" + p
-            e4 = "E" + p
-            e5 = "F" + p
-            e6 = "G" + p
-            p = int(p)
+            e1 = f"B{p}"
+            e2 = f"C{p}"
+            e3 = f"D{p}"
+            e4 = f"E{p}"
+            e5 = f"F{p}"
+            e6 = f"G{p}"
             print("Añadiendo...")
 
             Libro[e1]=cancion["Titulo"]
@@ -81,10 +81,10 @@ def iniciador(ruta):
             Libro[e5]=cancion["Genero"]
             Libro[e6]=cancion["Año"]            
             p=p+1
-            Libro['A1']=p
+            Libro['A2']=p
             Archivo.save("DB.xlsx")
             print("Añadido con exito",cancion["Titulo"])
             print("###############################")
     print("Fin de La Creacion")
-iniciador("S:\Musica\Musica\salvar\conservar 2")    
+#iniciador("S:\Musica\Musica\salvar\conservar 2")    
     

@@ -96,7 +96,6 @@ class MetaData_Sorter(App):
         return self.sm
 
     
-
     def procesar_ruta(self, ruta):
         self.ruta = ruta
     # Mostrar procesando en la UI
@@ -120,7 +119,7 @@ class MetaData_Sorter(App):
     def _iniciar_hilo(self):
         hilo = threading.Thread(
             target=submain.disparador,
-            kwargs={'pedir_db_func': PedirDB, 'cargar_func': cargar, 'rellDER': GestorScreen.rellena_derecha, 'rellIZQ': GestorScreen.rellena_izquierda},
+            kwargs={'pedir_db_func': PedirDB, 'cargar_func': cargar},
             daemon=True
         )
         hilo.start()
@@ -152,7 +151,12 @@ def PedirDB(C_Entrada):
             Cancion = {"Titulo":T.value ,"Artista": A.value,"Album": al.value,"Año": Ao.value,"Genero":G.value,"ID":R,"Estado":"PEND"}
             #print("cancion pedida: ",Cancion)
             C_Entrada.put(Cancion)
-            Clock.schedule_once(lambda dt: GestorScreen.rellena_izquierda(self,Cancion))#PENDIENTE, ARREGLAR, DEBE LLAMARSE RELLENA DERECHA, OJO, SE TOCARON LAS FUNCIONES QUE SE LLAMAN(REQCUERDE ARREGLAR)
+            gestor = App.get_running_app().sm.get_screen("gestor")
+            Clock.schedule_once(lambda dt, c=Cancion: gestor.agregar_cancion(c))
+
+            #Clock.schedule_once(lambda dt: App.get_running_app().sm.get_screen("gestor").rellena_izquierda(Cancion))
+
+            
 
         #print("cola de entrada actual:", list(C_Entrada.queue))
 
@@ -168,11 +172,13 @@ def cargar(C_Salida,):
     Libro=Archivo['Sheet'] 
     P=Libro['P3']
     p=P.value
+    gestor = App.get_running_app().sm.get_screen("gestor")
     while not C_Salida.empty():
         cancion=C_Salida.get()
         print("cancion extraida: ",cancion)
         #envia a la interfaz
-        Clock.schedule_once(lambda dt: GestorScreen.rellena_derecha(GestorScreen(),cancion))
+        Clock.schedule_once(lambda dt, c=cancion: gestor.actualizar(c))
+
         #comienza a guardar en la DB
         Libro[f'i{p}']=cancion["Titulo"]
         Libro[f'j{p}']=cancion["Artista"]

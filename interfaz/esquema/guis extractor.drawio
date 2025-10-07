@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2025-09-08T15:28:52.778Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="RTPXTKjcLtBCkXJN9tGH" version="21.7.5" type="device">
+<mxfile host="Electron" modified="2025-09-28T13:25:31.288Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="Z2ZQQHqQRx6Ambrrsxec" version="21.7.5" type="device">
   <diagram name="Página-1" id="TU1vtjwo4NS8Nu1-XrR9">
-    <mxGraphModel dx="2373" dy="1599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2613" dy="1742" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -375,11 +375,11 @@
         <mxCell id="vFUyh0vmtfQ6-r6KQ1nD-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
           <mxGeometry x="-790" y="-280" width="10" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="vFUyh0vmtfQ6-r6KQ1nD-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
-          <mxGeometry x="-1470" y="-270" width="340" height="300" as="geometry" />
+        <mxCell id="vFUyh0vmtfQ6-r6KQ1nD-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFF00;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+          <mxGeometry x="-1460" y="-250" width="650" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="vFUyh0vmtfQ6-r6KQ1nD-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
-          <mxGeometry x="-1120" y="-270" width="320" height="300" as="geometry" />
+        <mxCell id="vFUyh0vmtfQ6-r6KQ1nD-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00CC00;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+          <mxGeometry x="-1465" y="-110" width="645" height="130" as="geometry" />
         </mxCell>
         <mxCell id="vFUyh0vmtfQ6-r6KQ1nD-6" value="datos actuales" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1370" y="-310" width="140" height="30" as="geometry" />
@@ -387,26 +387,47 @@
         <mxCell id="vFUyh0vmtfQ6-r6KQ1nD-7" value="datos ordenados" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="-1040" y="-310" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q9hGUMgiGR3vey2h18Wr-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1450" y="-680" width="280" height="100" as="geometry" />
+        <mxCell id="Q9hGUMgiGR3vey2h18Wr-2" value="{&#39;Titulo&#39;: &#39;Tristam Braken Frame of Mind Monstercat &#39;, &#39;Artista&#39;: &#39;Monstercat Uncaged&#39;, &#39;Album&#39;: &#39;&#39;, &#39;Numero de&amp;nbsp; pista&#39;: &#39;&#39;, &#39;Genero&#39;: &#39;&#39;, &#39;Año&#39;: &#39;&#39;, &#39;Numero de pista&#39;: &#39;&#39;}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-1440" y="-600" width="350" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="Q9hGUMgiGR3vey2h18Wr-2" value="{&#39;Titulo&#39;: &#39;Tristam Braken Frame of Mind Monstercat &#39;, &#39;Artista&#39;: &#39;Monstercat Uncaged&#39;, &#39;Album&#39;: &#39;&#39;, &#39;Numero de&amp;nbsp; pista&#39;: &#39;&#39;, &#39;Genero&#39;: &#39;&#39;, &#39;Año&#39;: &#39;&#39;, &#39;Numero de pista&#39;: &#39;&#39;}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1270" y="-530" width="350" height="110" as="geometry" />
+        <mxCell id="U6vipE7hB4yKpgHTDEvk-1" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="-1450" y="-220" width="290" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Q9hGUMgiGR3vey2h18Wr-3" value="Titulo: Tristam Braken Frame of Mind Monstercat&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1460" y="-680" width="290" height="30" as="geometry" />
+        <mxCell id="Q9hGUMgiGR3vey2h18Wr-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="U6vipE7hB4yKpgHTDEvk-1" vertex="1">
+          <mxGeometry x="10" width="280" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Q9hGUMgiGR3vey2h18Wr-4" value="Artista:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1450" y="-650" width="60" height="30" as="geometry" />
+        <mxCell id="Q9hGUMgiGR3vey2h18Wr-3" value="Titulo: Tristam Braken Frame of Mind Monstercat&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="U6vipE7hB4yKpgHTDEvk-1" vertex="1">
+          <mxGeometry width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q9hGUMgiGR3vey2h18Wr-5" value="Album:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1450" y="-620" width="60" height="30" as="geometry" />
+        <mxCell id="Q9hGUMgiGR3vey2h18Wr-4" value="Artista:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="U6vipE7hB4yKpgHTDEvk-1" vertex="1">
+          <mxGeometry x="10" y="30" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q9hGUMgiGR3vey2h18Wr-6" value="Genero:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1290" y="-650" width="60" height="30" as="geometry" />
+        <mxCell id="Q9hGUMgiGR3vey2h18Wr-5" value="Album:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="U6vipE7hB4yKpgHTDEvk-1" vertex="1">
+          <mxGeometry x="10" y="60" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q9hGUMgiGR3vey2h18Wr-7" value="Año:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-1290" y="-620" width="60" height="30" as="geometry" />
+        <mxCell id="Q9hGUMgiGR3vey2h18Wr-6" value="Genero:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="U6vipE7hB4yKpgHTDEvk-1" vertex="1">
+          <mxGeometry x="170" y="30" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9hGUMgiGR3vey2h18Wr-7" value="Año:&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="U6vipE7hB4yKpgHTDEvk-1" vertex="1">
+          <mxGeometry x="170" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="U6vipE7hB4yKpgHTDEvk-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1090" y="-220" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="U6vipE7hB4yKpgHTDEvk-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1100" y="-80" width="280" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="U6vipE7hB4yKpgHTDEvk-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1465" y="-80" width="305" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="hIiFLzfFIiRWRoAKCK3a-3" value="&lt;font color=&quot;#333300&quot;&gt;() PENDIENTE&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-930" y="-250" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hIiFLzfFIiRWRoAKCK3a-2" value="1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1460" y="-250" width="20" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="hIiFLzfFIiRWRoAKCK3a-4" value="&lt;font color=&quot;#003300&quot;&gt;ENCONTRADA&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-930" y="-110" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
